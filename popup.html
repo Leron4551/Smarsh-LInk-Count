@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LinkCount</title>
+    <link type="text/css" rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
+</head>
+<body>
+<div id="container">
+    <table>
+        <thead>
+        <tr>
+            <th colspan="9">
+                <span id="page_url">[PROTOCOL]<span id="page_domain">[DOMAIN]</span>[PATH]</span>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="button" class="filter_button" id="all_links" value="ALL">
+            </td>
+            <td colspan="3">
+                <input type="button" class="filter_button" id="domain_links" value="DOMAIN">
+            </td>
+            <td colspan="3">
+                <input type="button" class="filter_button" id="subdomain_links" value="SUBDOMAIN">
+            </td>
+        </tr>
+        </thead>
+        <tbody id="table_body">
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

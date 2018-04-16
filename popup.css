@@ -1,0 +1,69 @@
+.filter_button {
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.filter_button:hover {
+    opacity: 0.75;
+}
+
+#all_links {
+    background-color: #D50000;
+    color: #FFFFFF;
+}
+
+#domain_links, .domain_row {
+    background-color: #00C853;
+    color: #FFFFFF;
+}
+
+#subdomain_links, .subdomain_row {
+    background-color: #2962FF;
+    color: #FFFFFF;
+}
+
+#container {
+    font-family: sans-serif;
+    padding: 1em;
+}
+
+#page_url {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#page_domain {
+    color: #00C853;
+}
+
+body {
+    margin: 0;
+    width: 50em;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 1.25em;
+}
+
+#table_body {
+    table-layout: auto;
+}
+
+#table_body tr {
+    border-bottom: 1px solid black;
+}
+
+#table_body tr:hover {
+    background-color: #cccccc;
+}
+
+a {
+    color: #000000;
+}
