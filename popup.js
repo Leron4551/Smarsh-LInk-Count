@@ -82,6 +82,8 @@ function filter_links(links, filter) {
 function button_press(object, filter, subdomains) {
     var url_list = filter_links(object.links, filter);
     clear_table();
+    var header_name = filter? filter + " links" : "All links";
+    generate_header(header_name);
     if(subdomains) {
         for(var i = 0; i < subdomains.length; i++) {
             generate_header(subdomains[i]);
@@ -92,6 +94,7 @@ function button_press(object, filter, subdomains) {
             }
         }
     } else {
+        generate_header(filter? );
         for (var j = 0; j < url_list.length; j++) {
             generate_row(j + 1, url_list[j])
         }
