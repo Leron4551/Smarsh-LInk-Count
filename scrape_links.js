@@ -32,10 +32,10 @@ function generate_link(url) {
 
 function match_domain(domain) {
     var domain_match = domain === SOURCE_DOMAIN ? SOURCE_DOMAIN : false;
-    var subdomain = match_subdomain(domain);
-    if(!domain_match && subdomain) {
-        domain_match = domain.substr(subdomain.length + 1) === SOURCE_DOMAIN ? SOURCE_DOMAIN : false;
-    }
+    // var subdomain = match_subdomain(domain);
+    // if(!domain_match && subdomain) {
+    //     domain_match = domain.substr(subdomain.length + 1) === SOURCE_DOMAIN ? SOURCE_DOMAIN : false;
+    // }
     return domain_match;
 }
 

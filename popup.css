@@ -12,7 +12,7 @@
     opacity: 0.75;
 }
 
-#all_links {
+#all_links, .external_row {
     background-color: #D50000;
     color: #FFFFFF;
 }
