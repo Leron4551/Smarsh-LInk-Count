@@ -94,7 +94,6 @@ function button_press(object, filter, subdomains) {
             }
         }
     } else {
-        generate_header(filter? );
         for (var j = 0; j < url_list.length; j++) {
             generate_row(j + 1, url_list[j])
         }
