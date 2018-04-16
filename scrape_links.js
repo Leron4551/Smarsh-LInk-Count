@@ -14,7 +14,7 @@ function scrape_links() {
     var links = [];
     for(var i = 0; i < document.links.length; ++i) {
         var url = document.links[i].href;
-        if(url.indexOf("javascript:") < 0) {
+        if(url.indexOf("javascript:") < 0 && url.indexOf("mailto:") < 0 && url.indexOf("tel:") < 0 ) {
             links.push(generate_link(url));
         }
     }
